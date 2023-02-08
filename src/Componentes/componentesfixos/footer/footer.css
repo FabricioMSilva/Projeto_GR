@@ -1,0 +1,36 @@
+
+.geral_Footer{
+    background:  #363535;
+    width: 100%;
+   box-shadow: #363535 3px;
+    border: #363535 4px solid;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+   position: fixed;
+    justify-content: center;
+    
+}
+.container{
+    display: flex;
+  
+  align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    font-size: 12pt;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+.ul{
+    text-decoration: none ;
+    list-style: none;
+}
+.ul.li.a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+
+}
