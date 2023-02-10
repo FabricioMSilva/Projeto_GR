@@ -1,20 +1,71 @@
 .geral_Cadastro{
-    border: solid pink;
+   
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
 .container_cadastro{
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    border: solid ;
+    display: grid;
+    width: 100vw;
+
+    justify-content: center;
+    align-content: center;
 
 }
 .bloco{
-    border: solid 2px red;
+
     margin-left: 10%;
     padding: 8px;
-   
+    width: 60vw;
+    text-align: left;
+}
+input{
+    width: 50vw;
+    height: 30px;
+   margin-left: 10px;
+  box-shadow: 3px 3px rgb(109, 106, 106) ;
+    display: grid;
+   border-radius: 5rem ;
+   padding: 1px;
+   text-align: center;
+
+}
+.center{text-align: center;}
+select{
+    width: 50vw;
+    height: 30px;
+   margin-left: 10px;
+  box-shadow: 3px 3px rgb(109, 106, 106) ;
+    display: grid;
+   border-radius: 5rem ;
+   padding: 1px;
+   text-align: center;
+}
+.detalhes{
+    display: grid; 
+
+     width: 60vw;
+}
+minimo{width: 5vw;
+
+}
+.blocoBtn{
+ 
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+}
+.btn{
+    width: 40vw;
+    height: 15;
+   margin-left: 10px;
+  box-shadow: 3px 3px rgb(109, 106, 106) ;
+    display: grid;
+   border-radius: 50rem ;
+   font-size: xx-large;
+   padding: 1px;
+   text-align: center;
+text-justify:auto;
 }

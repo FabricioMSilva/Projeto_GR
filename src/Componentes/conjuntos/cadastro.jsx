@@ -7,15 +7,11 @@ const Cadastro = () => {
     return (
         <div className="geral_Cadastro">
             <form className="container_cadastro">
-                <div className="bloco"><h1>Cadastro de Conjuntos</h1></div>
-                <div className="bloco">
-                    <label htmlFor="id"> ID:
-                        <input type="text" name="ID" id="" />
-                    </label>
-                </div>
+                <div className="bloco center"><h1>Cadastro de Conjuntos</h1></div>
+                
                 <div  className="bloco">
-                    <label htmlFor="">MAQUINA:
-                        <select id="editable-select">
+                    <label htmlFor=""className="lbMaqina ">MAQUINA:
+                        <select id="editable-select" className="combobox center ">
                             <option>M32</option>
                             <option>M40</option>
                             <option>M661</option>
@@ -35,9 +31,7 @@ const Cadastro = () => {
                     </label>
                 </div>
                 <div  className="bloco">
-                    <label htmlFor="">MINIMO:
-                        <input type="number" name="MINIMO" id="" />
-                    </label>
+                    
                 </div>
                 <div  className="bloco">
                     <label htmlFor="">DESENHO:
@@ -54,14 +48,20 @@ const Cadastro = () => {
                         <input type="text" name="DESCRICAO" id="" />
                     </label>
                 </div>
-                <div  className="bloco">
-                    <label htmlFor=""> TRATA-SE DE UM CONJUNTO CRITICO:
-                        <input type="checkbox" name="CRITICIDADE" id="" />SIM
+                <div  className="detalhes bloco">
+                    <label htmlFor=""> O item é um conjunto crítico?
+                        <input type="checkbox" name="CRITICIDADE" id="" />
+                        
+                    </label>
+                    <label htmlFor="">
+                        <p>Quantidade Minima:</p>
+                        <input type="number" name="MINIMO" id="" className="minimo"/>
                     </label>
                 </div>
-                <div  className="bloco">
-                <button>Enviar</button></div>
+                <div  className="center blocoBtn">
+                <button className="center btn">Enviar</button></div>
             </form>
+            <br/><br/>
 
         </div>
 
