@@ -1,8 +1,10 @@
 .geral_Cadastro{
-   
+   border: 3px greenyellow solid;
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 60%;
+    text-align: center;
 }
 
 .container_cadastro{
@@ -44,8 +46,8 @@ select{
 }
 .detalhes{
     display: grid; 
-
-     width: 60vw;
+    border: red 3px solid;
+     width: 100%;
 }
 minimo{width: 5vw;
 
@@ -61,6 +63,7 @@ minimo{width: 5vw;
     width: 40vw;
     height: 15;
    margin-left: 10px;
+   margin-bottom: 20px;
   box-shadow: 3px 3px rgb(109, 106, 106) ;
     display: grid;
    border-radius: 50rem ;

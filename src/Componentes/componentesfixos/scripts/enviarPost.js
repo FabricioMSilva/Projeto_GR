@@ -1,4 +1,5 @@
-const enviar = ()=>{
+const onChangeEnviar = ()=>{
+
 
 fetch('https://sheetdb.io/api/v1/6kiwkpohsxc8v', {
     method: 'POST',
@@ -9,15 +10,14 @@ fetch('https://sheetdb.io/api/v1/6kiwkpohsxc8v', {
     body: JSON.stringify({
         data: [
             {
-                'ID': "ID",
-                'MAQUINA': "MAQUINA",
-                'CONJUNTO': "CONJUNTO",
-                'MINIMO': "MINIMO",
-                'DESENHO': "DESENHO",
-                'FOTO': "FOTO",
-                'DESCRIÇÃO': "DESCRIÇÃO",
-                'DISPONIVEL': "DISPONIVEL",
-                'PRATELEIRA': "PRATELEIRA"
+                
+                'MAQUINA': {MAQUINA},
+                'CONJUNTO': {CONJUNTO},
+                'MINIMO': {MINIMO},
+                'DESENHO': {DESENHO},
+                'FOTO': {FOTO},
+                'DESCRIÇÃO': {DESCRICAO},
+                'CRITICIDADE':{CRITICIDADE}
             }
         ]
     })
@@ -25,4 +25,4 @@ fetch('https://sheetdb.io/api/v1/6kiwkpohsxc8v', {
     .then((response) => response.json())
     .then((data) => console.log(data));
 }
-  enviar()
+export default onChangeEnviar();
