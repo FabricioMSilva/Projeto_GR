@@ -3,7 +3,7 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 import Entrar from "../Login/Entrar.jsx";
 import Home from "../Home/Home.jsx";
-
+import Cadastro from "../conjuntos/cadastro"
 
 const  Router = () => {
 
@@ -14,6 +14,7 @@ const  Router = () => {
                 <Routes>
                     <Route path="/" element={<Entrar/>} /> 
                     <Route path="/Home" element={<Home/>} />
+                    <Route path="/Cadastro" element={<Cadastro/>} />
                 </Routes>
 
             </BrowserRouter>

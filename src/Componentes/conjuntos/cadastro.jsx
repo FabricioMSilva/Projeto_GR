@@ -1,9 +1,12 @@
 
+import React from "react";
 
+import useState from "react";
 
 const EnviarCadastro = () => {
     
-
+ 
+    
     const [MAQUINA, setMAQUINA] = useState("881");
     const [CONJUNTO, setCONJUNTO] = useState("rodolfo ");
     const [DESENHO, setDESENHO] = useState("chatao");
