@@ -1,5 +1,13 @@
+.deus{
+    display: flex;
+   
+    justify-content: center;
+    align-content: center;
+}
+
+
 .geral_Cadastro{
-   border: 3px greenyellow solid;
+
     display: flex;
     justify-content: center;
     align-content: center;
@@ -46,7 +54,7 @@ select{
 }
 .detalhes{
     display: grid; 
-    border: red 3px solid;
+  
      width: 100%;
 }
 minimo{width: 5vw;

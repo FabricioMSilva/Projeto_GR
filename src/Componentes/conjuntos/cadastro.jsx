@@ -1,15 +1,14 @@
 
-import React from "react";
-
-import useState from "react";
+import React, {useState}  from "react";
+import "../conjuntos/conjuntos.css";
 
 const EnviarCadastro = () => {
     
  
     
-    const [MAQUINA, setMAQUINA] = useState("881");
-    const [CONJUNTO, setCONJUNTO] = useState("rodolfo ");
-    const [DESENHO, setDESENHO] = useState("chatao");
+    const [MAQUINA, setMAQUINA] = useState("");
+    const [CONJUNTO, setCONJUNTO] = useState("");
+    const [DESENHO, setDESENHO] = useState("");
     const [FOTO, setFOTO] = useState("");
     const [DESCRICAO, setDESCRICAO] = useState("");
     const [MINIMO, setMINIMO] = useState("");
@@ -24,8 +23,9 @@ const EnviarCadastro = () => {
 
     const onChangeEnviar = ()=>{
 
-
-        fetch('https://sheetdb.io/api/v1/6kiwkpohsxc8v', {
+      
+        
+        fetch('https://sheetdb.io/api/v1/vrryyqg2sfdor', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -35,13 +35,13 @@ const EnviarCadastro = () => {
                 data: [
                     {
                         
-                        'MAQUINA': {MAQUINA},
-                        'CONJUNTO': {CONJUNTO},
-                        'MINIMO': {MINIMO},
-                        'DESENHO': {DESENHO},
-                        'FOTO': {FOTO},
-                        'DESCRIÇÃO': {DESCRICAO},
-                        'CRITICIDADE':{CRITICIDADE}
+                        'MAQUINA': MAQUINA,
+                        'CONJUNTO': CONJUNTO,
+                        'MINIMO': MINIMO,
+                        'DESENHO': DESENHO,
+                        'FOTO': FOTO,
+                        'DESCRIÇÃO': DESCRICAO,
+                        'CRITICIDADE':CRITICIDADE
                     }
                 ]
             })
@@ -54,6 +54,7 @@ const EnviarCadastro = () => {
     
 
     return (
+        <div className="deus">
         <div className="geral_Cadastro">
             <form className="container_cadastro">
                 <div className="bloco center"><h1>Cadastro de Conjuntos</h1></div>
@@ -94,11 +95,11 @@ const EnviarCadastro = () => {
                 <div className="bloco">
                     <label htmlFor="">DESENHO:
                         <input
-                            type="number"
+                            type="url"
                             name="DESENHO"
                             id="DESENHO"
                             onChange={onChangeDESENHO}
-                            value="1"
+                            value={DESENHO}
                         />
 
                     </label>
@@ -106,11 +107,11 @@ const EnviarCadastro = () => {
                 <div className="bloco">
                     <label htmlFor="">FOTO:
                         <input
-                            type="number"
+                            type="url"
                             name="FOTO"
                             id="FOTO"
                             onChange={onChangeFOTO}
-                            value="1"
+                            value={FOTO}
                         />
                     </label>
                 </div>
@@ -121,7 +122,7 @@ const EnviarCadastro = () => {
                             name="DESCRICAO"
                             id="DESCRICAO"
                             onChange={onChangeDESCRICAO}
-                            value="1"
+                            value={DESCRICAO}
                         />
                     </label>
                 </div>
@@ -132,7 +133,7 @@ const EnviarCadastro = () => {
                             name="CRITICIDADE"
                             id="CRITICIDADE"
                             onChange={onChangeCRITICIDADE}
-                            value="1"
+                            value={CRITICIDADE}
                         />
 
                     </label>
@@ -144,7 +145,7 @@ const EnviarCadastro = () => {
                             id="MINIMO"
                             className="minimo"
                             onChange={onChangeMINIMO}
-                            value="1"
+                            value={MINIMO}
                         />
                     </label>
                 </div>
@@ -152,6 +153,7 @@ const EnviarCadastro = () => {
                     <button
                         className="center btn"
                         onClick={onChangeEnviar}
+                        type="button"
                         value="1"
                     >Enviar
                     </button>
@@ -160,7 +162,7 @@ const EnviarCadastro = () => {
             <br /><br />
 
         </div>
-
+</div>
     );
 
 }
