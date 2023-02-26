@@ -1,0 +1,28 @@
+.geralCard{
+display: grid;
+align-items: center;
+justify-content: center;
+border: solid 1px black;
+width: 20rem;
+}
+.imgCard{
+    border: solid 1px rgb(255, 0, 0);
+    width: 18rem;
+    height: 12rem;
+    position: relative;
+}
+.InfoCard{
+    border: solid 1px rgb(0, 255, 106);
+    width: 18rem;
+}
+.btnsCard{
+    border: solid 1px rgb(0, 255, 106);
+    width: 18rem;
+    height: 3rem;
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+}
+h3{
+text-align: center;
+}

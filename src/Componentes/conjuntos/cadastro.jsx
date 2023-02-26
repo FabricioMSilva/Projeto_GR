@@ -19,7 +19,7 @@ const EnviarCadastro = () => {
     const onChangeFOTO = (event) => { setFOTO(event.target.value); };
     const onChangeDESCRICAO = (event) => { setDESCRICAO(event.target.value); };
     const onChangeMINIMO = (event) => { setMINIMO(event.target.value); };
-    const onChangeCRITICIDADE = (event) => { setCRITICIDADE(event.target.value); };
+
 
     const onChangeEnviar = ()=>{
 
@@ -48,6 +48,11 @@ const EnviarCadastro = () => {
         })
             .then((response) => response.json())
             .then((data) => console.log(data));
+         
+
+
+         
+            
         }
                
  
@@ -127,23 +132,14 @@ const EnviarCadastro = () => {
                     </label>
                 </div>
                 <div className="detalhes bloco">
-                    <label htmlFor=""> O item é um conjunto crítico?
-                        <input
-                            type="checkbox"
-                            name="CRITICIDADE"
-                            id="CRITICIDADE"
-                            onChange={onChangeCRITICIDADE}
-                            value={CRITICIDADE}
-                        />
-
-                    </label>
-                    <label htmlFor="">
+                 
+                    <label htmlFor=""  className="minimo">
                         <p>Quantidade Minima:</p>
                         <input
                             type="number"
                             name="MINIMO"
                             id="MINIMO"
-                            className="minimo"
+                            className=""
                             onChange={onChangeMINIMO}
                             value={MINIMO}
                         />

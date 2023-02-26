@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../componentesfixos/footer/footer";
-
 import Menu from "../componentesfixos/menu/menu";
 import emage from "./imagens/index.jpg";
 import "./Home.css";

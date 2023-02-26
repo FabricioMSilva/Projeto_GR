@@ -4,6 +4,7 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Entrar from "../Login/Entrar.jsx";
 import Home from "../Home/Home.jsx";
 import Cadastro from "../conjuntos/cadastro"
+import Card from "../conjuntos/card.jsx";
 
 const  Router = () => {
 
@@ -12,7 +13,7 @@ const  Router = () => {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Entrar/>} /> 
+                    <Route path="/" element={<Card/>} /> 
                     <Route path="/Home" element={<Home/>} />
                     <Route path="/Cadastro" element={<Cadastro/>} />
                 </Routes>

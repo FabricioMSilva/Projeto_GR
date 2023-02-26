@@ -57,8 +57,11 @@ select{
   
      width: 100%;
 }
-minimo{width: 5vw;
+.minimo{width: 100px;
 
+display: flex;
+align-items: center;
+justify-items: center;
 }
 .blocoBtn{
  
@@ -80,3 +83,4 @@ minimo{width: 5vw;
    text-align: center;
 text-justify:auto;
 }
+
