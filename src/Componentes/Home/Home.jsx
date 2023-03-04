@@ -1,8 +1,9 @@
 import React from "react";
 import Footer from "../componentesfixos/footer/footer";
 import Menu from "../componentesfixos/menu/menu";
-import emage from "./imagens/index.jpg";
+
 import "./Home.css";
+import Card from "../conjuntos/card";
 
 
 const Home = () => { 
@@ -13,7 +14,8 @@ const Home = () => {
            
             <Menu/>
                 <div className="img_fundo">
-                 <img src={emage} alt="" className="minhaimagem"/>
+             
+                 <Card/>
                 </div>
             <Footer/>
           

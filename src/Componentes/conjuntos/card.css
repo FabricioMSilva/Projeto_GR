@@ -1,28 +1,45 @@
+.paiCard{
+    display: flex;
+}
 .geralCard{
 display: grid;
 align-items: center;
 justify-content: center;
-border: solid 1px black;
-width: 20rem;
+width: 15rem;
+font-size: 8pt;
+
+margin: 2rem;
+}
+.fotoeTitulo{
+    display: grid;
+    width: max-content;
+    border: solid 6px rgb(0, 0, 0);
+    color: rgb(75, 78, 78);
+    text-align: center;
+    border-radius: 6%;
+}
+.fotoeTitulo:hover{
+    display: grid;
+    width: max-content;
+    border: solid 6px yellow;
+    color: white;
+    text-align: center;
+    transition: 1s;
+    background-color: rgb(22, 22, 61);
 }
 .imgCard{
-    border: solid 1px rgb(255, 0, 0);
-    width: 18rem;
-    height: 12rem;
-    position: relative;
+    width: max-content;
 }
-.InfoCard{
-    border: solid 1px rgb(0, 255, 106);
-    width: 18rem;
+.tituloCard{
+    text-align: center;
+
 }
-.btnsCard{
-    border: solid 1px rgb(0, 255, 106);
-    width: 18rem;
-    height: 3rem;
-    display: flex;
-   justify-content: space-around;
-    align-items: center;
+.Img{
+    width: 12rem;
+    filter: grayscale(80%);
 }
-h3{
-text-align: center;
+.Img:hover{
+    width: 11rem;
+    filter: grayscale(0%);
+    transition: 1.5s;
 }

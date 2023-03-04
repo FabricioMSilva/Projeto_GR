@@ -14,7 +14,7 @@ const Menu = () => {
             <div className="geral_menu">
                 <nav className="menu-nav">
                     <ul className="nav-ul">
-                        <li className="btn-menu" onClick={goCadastro}>Conjuntos</li>
+                        <li className="btn-menu" onClick={goCadastro}>Cadastro</li>
                         <li className="btn-menu" >Desenhos</li>
                         <li className="btn-menu" >Pesquisador</li>
 
