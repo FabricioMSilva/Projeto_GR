@@ -1,5 +1,14 @@
 .paiCard{
-    display: flex;
+    display: grid;
+  
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    
+    grid-template-columns: repeat(4, 1fr);
+    
+    grid-gap: 20px;
+    
 }
 .geralCard{
 display: grid;
@@ -17,21 +26,25 @@ margin: 2rem;
     color: rgb(75, 78, 78);
     text-align: center;
     border-radius: 6%;
+    background-color: rgb(255, 255, 255);
+    object-fit: cover;
 }
 .fotoeTitulo:hover{
     display: grid;
     width: max-content;
+    object-fit: cover;
     border: solid 6px yellow;
     color: white;
     text-align: center;
     transition: 1s;
-    background-color: rgb(22, 22, 61);
+   background-color: black;
 }
 .imgCard{
     width: max-content;
 }
 .tituloCard{
     text-align: center;
+font-size: 14px;
 
 }
 .Img{

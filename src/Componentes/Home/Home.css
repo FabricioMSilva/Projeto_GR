@@ -1,5 +1,5 @@
 .geralHome{
-    border: 3px violet solid;
+
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -17,9 +17,9 @@
     display: flex;
     justify-content: center;
     height: 100vh;
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/12/20/27/macro-1452987_960_720.jpg);
 
 
-    border: 5px rgb(255, 0, 255) solid;
 }
 .minhaimagem{
     display: flex;

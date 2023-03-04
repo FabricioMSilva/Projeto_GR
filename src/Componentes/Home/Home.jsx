@@ -12,7 +12,7 @@ const Home = () => {
     return(
         <div className="geralHome">
            
-            <Menu/>
+       
                 <div className="img_fundo">
              
                  <Card/>
