@@ -25,7 +25,7 @@ const Card = () => {
         <div className="paiCard">
             {dados.map((item) => (
                 <div className="geralCard">
-                    <div className="fotoeTitulo" >
+                    <div className="fotoeTitulo"  >
                         <div className="imgCard">
                             <p className="tituloCard">{item.CONJUNTO}</p>
                             <img src={item.FOTO} className="Img" alt="foto do conjunto" />
