@@ -10,13 +10,13 @@ const Detalhes = () => {
             fetch("https://sheetdb.io/api/v1/vrryyqg2sfdor")
                 .then((response) => response.json())
                 .then((response) => {
-                    const result = response.find(item.ID === id)
+                    const result = response.find(dados.ID === id)
                     setDados(result)
                 });
         }, []);
     
         useEffect(() => {
-            if (!dados.length) {
+            if (id) {
                 getAllData();
             }
         }, []);
@@ -26,10 +26,10 @@ const Detalhes = () => {
     return (
         <div>
             <div>
-                <div className="imgCard">
-                <p className="id">{item.ID}</p>
-                <p className="tituloCard">{item.CONJUNTO}</p>
-                    <img src={item.FOTO} className="Img" alt="foto do conjunto" />
+                <div className="imgCard" key={dados.ID}>
+                <p className="id">'kjkj{dados?.ID}'</p>
+                <p className="tituloCard">{dados.CONJUNTO}</p>
+                    <img src={dados.FOTO} className="Img" alt="foto do conjunto" />
                 </div></div>
         </div>
     );

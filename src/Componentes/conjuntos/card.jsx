@@ -24,7 +24,7 @@ const Card = () => {
   const navigate = useNavigate()
   
   const goDetalhes = (id) => {
-    navigate('/Detalhes/${id}')
+    navigate(`/Detalhes/${id}`)
 
     }
 
@@ -33,16 +33,16 @@ const Card = () => {
         <div className="paiCard">
             {dados.map((item) => (
                 
-                <div className="geralCard" key={item.CONJUNTO} onClick={goDetalhes}>
+                <div className="geralCard" key={item.CONJUNTO} onClick={()=>goDetalhes(item.ID)}>
                    
-                    <div className="fotoeTitulo" key={item.CONJUNTO} >
-                    <div className="ID" key={item.ID} id={item.ID}>'ID:{item.ID}'</div>
+                    <div className="fotoeTitulo"  >
+                    <div className="ID" key={item.ID} id={item.ID}>'ID:{item?.ID}'</div>
                         <div className="imgCard">
-                            <p className="tituloCard">{item.CONJUNTO}</p>
-                            <img src={item.FOTO} className="Img" alt="foto do conjunto" />
+                            <p className="tituloCard">{item?.CONJUNTO}</p>
+                            <img src={item?.FOTO} className="Img" alt="foto do conjunto" />
                         </div>
-                        <div className="InfoCard" key={item.CONJUNTO}>
-                            <p>{`Maquina: ${item.MAQUINA} - Mínimo: ${item.MINIMO}`}</p>
+                        <div className="InfoCard" key={item?.CONJUNTO}>
+                            <p>{`Maquina: ${item?.MAQUINA} - Mínimo: ${item?.MINIMO}`}</p>
                         </div>
                     </div>
                 </div>
