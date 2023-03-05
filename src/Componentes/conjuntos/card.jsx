@@ -3,7 +3,7 @@
 import "./card.css";
 import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import guardaID from "../componentesfixos/scripts/guardarID";
+
 const Card = () => {
     const [dados, setDados] = useState([]);
 
@@ -23,9 +23,9 @@ const Card = () => {
 
   const navigate = useNavigate()
   
-  const goDetalhes = () => {
-    navigate("/Detalhes")
-    guardaID()
+  const goDetalhes = (id) => {
+    navigate('/Detalhes/${id}')
+
     }
 
 
@@ -36,7 +36,7 @@ const Card = () => {
                 <div className="geralCard" key={item.CONJUNTO} onClick={goDetalhes}>
                    
                     <div className="fotoeTitulo" key={item.CONJUNTO} >
-                    <div className="ID" key={item.CONJUNTO} id={item.ID}>'ID:{item.ID}'</div>
+                    <div className="ID" key={item.ID} id={item.ID}>'ID:{item.ID}'</div>
                         <div className="imgCard">
                             <p className="tituloCard">{item.CONJUNTO}</p>
                             <img src={item.FOTO} className="Img" alt="foto do conjunto" />
