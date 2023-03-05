@@ -2,8 +2,8 @@
 
 import "./card.css";
 import React, { useCallback, useEffect, useState } from "react";
-
-
+import { useNavigate } from "react-router-dom";
+import guardaID from "../componentesfixos/scripts/guardarID";
 const Card = () => {
     const [dados, setDados] = useState([]);
 
@@ -21,11 +21,22 @@ const Card = () => {
 
 
 
+  const navigate = useNavigate()
+  
+  const goDetalhes = () => {
+    navigate("/Detalhes")
+    guardaID()
+    }
+
+
     return (
         <div className="paiCard">
             {dados.map((item) => (
-                <div className="geralCard">
-                    <div className="fotoeTitulo"  >
+                
+                <div className="geralCard" key={item.CONJUNTO} onClick={goDetalhes}>
+                   
+                    <div className="fotoeTitulo" key={item.CONJUNTO} >
+                    <div className="ID" key={item.CONJUNTO} id={item.ID}>'ID:{item.ID}'</div>
                         <div className="imgCard">
                             <p className="tituloCard">{item.CONJUNTO}</p>
                             <img src={item.FOTO} className="Img" alt="foto do conjunto" />
@@ -37,26 +48,10 @@ const Card = () => {
                 </div>
             ))}
         </div>
-    );
+         
+    );  
 };
 export default Card;
  {/* 
-                        <div className="btnsCard">
-                            <div>
-                                <button>Detalhes</button>
-                                <button>Excluir</button>
-                            </div>
-                        </div> 
-                     Comentário do seu código
-                    </div>
-                    <div className="descricaoeDesenho">
-                        <div className="InfoCard" key={item.CONJUNTO}>
-
-                            <p>{`Maquina: ${item.MAQUINA} - Mínimo: ${item.MINIMO}`}</p>
-                            <p>{`Descrição: ${item.DESCRIÇÃO}`}</p>
-                            <a className="desenho" href={item.DESENHO}>Desenho: 1</a>
-                            <p></p>
-                        </div>
-
-                    </div> 
+                        
                     */}

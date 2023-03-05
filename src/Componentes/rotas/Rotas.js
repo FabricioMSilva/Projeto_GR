@@ -2,9 +2,10 @@ import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 import Entrar from "../Login/Entrar.jsx";
-import Home from "../Home/Home.jsx";
+import Home from "../conjuntos/card.jsx";
 import Cadastro from "../conjuntos/cadastro"
 import Card from "../conjuntos/card.jsx";
+import Detalhes from "../conjuntos/detalhes.jsx";
 
 const  Router = () => {
 
@@ -15,6 +16,7 @@ const  Router = () => {
                 <Routes>
                     <Route path="/" element={<Home/>} /> 
                     <Route path="/Card" element={<Card/>} />
+                    <Route path="/Detalhes" element={<Detalhes/>} />
                     <Route path="/Cadastro" element={<Cadastro/>} />
                 </Routes>
 
