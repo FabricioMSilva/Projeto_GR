@@ -2,14 +2,43 @@
     display: grid;
   
     width: 100%;
-    max-width: 750px;
+   
     margin: 0 auto;
     
     grid-template-columns: repeat(4, 1fr);
     
     grid-gap: 20px;
-    
+    background: linear-gradient(270deg, #021231, #2f043b, #050a4d, #021b19, #030116);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 29s ease infinite;
+    -moz-animation: AnimationName 29s ease infinite;
+    -o-animation: AnimationName 29s ease infinite;
+    animation: AnimationName 29s ease infinite;
 }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+    
+
 .geralCard{
 display: grid;
 align-items: center;

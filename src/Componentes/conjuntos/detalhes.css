@@ -1,0 +1,87 @@
+.PaiDetalhe{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+   
+        background: linear-gradient(270deg, #021231, #2f043b, #050a4d, #021b19, #030116);
+        background-size: 1000% 1000%;
+    
+        -webkit-animation: AnimationName 29s ease infinite;
+        -moz-animation: AnimationName 29s ease infinite;
+        -o-animation: AnimationName 29s ease infinite;
+        animation: AnimationName 29s ease infinite;
+}
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 99%}
+        50%{background-position:100% 2%}
+        100%{background-position:0% 99%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 99%}
+        50%{background-position:100% 2%}
+        100%{background-position:0% 99%}
+    }
+    @-o-keyframes AnimationName {
+        0%{background-position:0% 99%}
+        50%{background-position:100% 2%}
+        100%{background-position:0% 99%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 99%}
+        50%{background-position:100% 2%}
+        100%{background-position:0% 99%}
+    }
+
+.geralDetalhe{
+
+    width: 90vw;
+}
+.tituloIdDetalhes{
+    background-color: transparent;
+    color: white;
+  
+  
+    border-radius: 3px 3px 3px 3px;
+    display: grid;
+}
+.IdDetalhes{
+    font-family: 'Times New Roman', Times, serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+.tituloDetalhes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.FotoDetalhes{
+    width: min-content;
+   
+
+}
+.ImgDetalhes{
+    width: 300px;
+    border: #ffffff solid 3px;
+    border-radius: 6px 6px 6px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+} 
+.subTituloDetalhes{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.containerDetalhes{
+    display: flex;
+}
+.DescricaoDetalhes{
+    padding: 2rem;
+
+}
+.linkdesenho{
+        color: white;
+        font-size: 20px;
+}
+.tabelaDetalhe{
+    color:white
+}

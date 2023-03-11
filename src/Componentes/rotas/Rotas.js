@@ -14,7 +14,7 @@ const  Router = () => {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home/>} /> 
+                    <Route path="/" element={<Card/>} /> 
                     <Route path="/Card" element={<Card/>} />
                     <Route path="/Detalhes/:id" element={<Detalhes/>} />
                     <Route path="/Cadastro" element={<Cadastro/>} />

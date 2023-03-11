@@ -25,7 +25,7 @@ const EnviarCadastro = () => {
 
       
         
-        fetch('https://sheetdb.io/api/v1/vrryyqg2sfdor', {
+        fetch('https://sheetdb.io/api/v1/3jl6w9or174mo', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

@@ -8,7 +8,7 @@ const Card = () => {
     const [dados, setDados] = useState([]);
 
     const getAllData = useCallback(() => {
-        fetch("https://sheetdb.io/api/v1/vrryyqg2sfdor")
+        fetch("https://sheetdb.io/api/v1/3jl6w9or174mo")
             .then((response) => response.json())
             .then((response) => setDados(response));
     }, []);
@@ -17,16 +17,16 @@ const Card = () => {
         if (!dados.length) {
             getAllData();
         }
-    }, []);
+    });
 
 
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   
   const goDetalhes = (id) => {
-    navigate(`/Detalhes/${id}`)
+    navigate(`/Detalhes/${id}`);
 
-    }
+    };
 
 
     return (
@@ -52,6 +52,3 @@ const Card = () => {
     );  
 };
 export default Card;
- {/* 
-                        
-                    */}
